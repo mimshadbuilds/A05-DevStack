@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@utility text-gradient-custom {
+    background-image: linear-gradient(to right, #FF5722, #D81B7E, #7C3AED);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+    background-image: linear-gradient(to right, #ff5722, #d81b7e, #7c3aed);
+    color: white;
+}
+
+
