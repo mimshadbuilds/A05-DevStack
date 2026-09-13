@@ -1,10 +1,10 @@
-# 🚀 A05-DevStack
+# A05-DevStack
 
 A modern, performant web development stack built with React, TypeScript, and Vite. This project demonstrates best practices for building fast, type-safe web applications with a focus on developer experience and production performance.
 
 ## 🌐 Live Link
 
-[View Live Project](https://your-live-link-here.com) *(update with your deployed URL)*
+[View Live Project]([npx plugins add vercel/vercel-plugin](https://a05-dev-stack-nine.vercel.app/)) *(update with your deployed URL)*
 
 ---
 
@@ -202,19 +202,4 @@ A05-DevStack/
 
 ---
 
-## 📝 License
 
-This project is open source and available under the MIT License.
-
----
-
-## 💡 Tips for Development
-
-- Use `npm run lint` before committing to catch code quality issues
-- Check the [React Docs](https://react.dev/learn/react-compiler) for React Compiler setup if needed
-- Refer to [Vite Docs](https://vite.dev/guide/) for advanced configurations
-- Keep components small and focused for better reusability and testing
-
----
-
-**Happy Coding! 🎉**
