@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import type { Itechnology } from "../../types";
 import TechnologyCard from "./TechnologyCard";
 import YourStack from "./YourStack";
+import { toast } from "react-toastify";
 
 interface TechnologyProps {
     technologyPromise: Promise<Itechnology[]>
@@ -12,15 +13,47 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
 
     const [selectedTechnologies, setSelectedTechnologies] = useState<Itechnology[]>([]);
 
+    const handleAddStack = (technology: Itechnology) => {
+        const addedStacks = selectedTechnologies.find((item) => 
+            item.id === technology.id
+    );
+
+        if (addedStacks) {
+        toast.warning(`${technology.name} is already in your stack!`);
+        return;
+        }
+
+        setSelectedTechnologies((previous) => [
+        ...previous,
+        technology,
+        ]);
+
+        toast.success(`${technology.name} added to your stack!`);
+    };
+
+    const handleRemove = (id: string) =>
+        setSelectedTechnologies((selected) =>
+        selected.filter((technology) => technology.id !== id)
+    )
+
+    const handleRemoveAll = () => {
+        setSelectedTechnologies([]);
+        toast.info("Your stack has been cleared.");
+    };
+
     return (
         <section className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:col-span-3 xl:grid-cols-3">
                     {technologies.map((technology) => (
-                        <TechnologyCard key={technology.id} technology={technology}  />
+                        <TechnologyCard key={technology.id} technology={technology} handleAddStack={handleAddStack}  />
                     ))}
                 </div>
-                <YourStack selectedTechnologies={selectedTechnologies} />
+                <YourStack
+                    selectedTechnologies={selectedTechnologies}
+                    removeBtn={handleRemove}
+                    removeAllBtn={handleRemoveAll}
+                />
             </div>
         </section>
     );
