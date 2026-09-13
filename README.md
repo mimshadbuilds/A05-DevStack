@@ -1,10 +1,10 @@
 # A05-DevStack
 
-A modern, performant web development stack built with React, TypeScript, and Vite. This project demonstrates best practices for building fast, type-safe web applications with a focus on developer experience and production performance.
+A modern, performant web development stack built with React, TypeScript, and Vite. This project demonstrates best practices for building fast, type-safe web applications with a focus on developer experience.
 
 ## 🌐 Live Link
 
-[View Live Project]([(https://a05-dev-stack-nine.vercel.app/)])
+[View Live Project](https://a05-dev-stack-nine.vercel.app/)
 
 ---
 
@@ -169,7 +169,7 @@ Tailwind CSS is configured via `tailwind.config.js`. The project includes DaisyU
 ## 📚 Links & Resources
 
 - 🔗 **[GitHub Repository](https://github.com/mimshadbuilds/A05-DevStack)**
-- 🌐 **[Live Project](https://your-live-link-here.com)** *(update with your deployed URL)*
+- 🌐 **[Live Project](https://a05-dev-stack-nine.vercel.app/)**
 - 📖 **[React Documentation](https://react.dev)**
 - ⚡ **[Vite Documentation](https://vite.dev)**
 - 🎨 **[Tailwind CSS](https://tailwindcss.com)**
@@ -201,5 +201,3 @@ A05-DevStack/
 **mimshadbuilds** - [GitHub Profile](https://github.com/mimshadbuilds)
 
 ---
-
-
