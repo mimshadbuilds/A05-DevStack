@@ -4,7 +4,7 @@ A modern, performant web development stack built with React, TypeScript, and Vit
 
 ## 🌐 Live Link
 
-[View Live Project]([npx plugins add vercel/vercel-plugin](https://a05-dev-stack-nine.vercel.app/)) *(update with your deployed URL)*
+[View Live Project]([[npx plugins add vercel/vercel-plugin](https://a05-dev-stack-nine.vercel.app/)](https://a05-dev-stack-nine.vercel.app/))
 
 ---
 
