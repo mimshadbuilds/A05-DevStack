@@ -17,7 +17,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Essential"
+        "badge": "SSR/Edge"
     },
     {
         "id": "nodejs",
@@ -27,7 +27,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Popular"
+        "badge": "Essential"
     },
     {
         "id": "express",
@@ -47,7 +47,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
         "rating": 4.9,
         "difficulty": "Intermediate",
-        "badge": "Popular"
+        "badge": "Versatile"
     },
     {
         "id": "javascript",
@@ -57,7 +57,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Popular"
     },
     {
         "id": "tailwindcss",
@@ -117,6 +117,6 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Github.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Popular"
+        "badge": "Standard"
     }
 ]

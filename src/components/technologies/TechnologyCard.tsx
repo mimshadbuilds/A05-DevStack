@@ -15,9 +15,19 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
                 <img
                     src={technology.icon}
                     alt={technology.name}
-                    className="h-9 w-9 object-contain"
-                />
-                <span className="badge badge-xs badge-info">
+                    className="h-9 w-9 object-contain" />
+
+                <span className={`badge badge-xs ${
+                    technology.badge === "Popular"
+                    ? "badge-info"
+                    : technology.badge === "Essential"
+                        ? "badge-warning"
+                        : technology.badge === "Fast"
+                        ? "badge-success"
+                        :technology.badge === "Top SQL"
+                        ? "badge-neutral"
+                        : "badge-accent"
+                }`}>
                     {technology.badge}
                 </span>
                 </div>
@@ -27,8 +37,8 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
                 <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
                 {technology.description}
                 </p>
-                <div className="mt-4 flex items-center justify-between gap-2 text-[10px]">
 
+                <div className="mt-4 flex items-center justify-between gap-2 text-[10px]">
                 <div className="flex items-center gap-1">
                     <span className="rounded bg-slate-100 px-2 py-1 text-slate-600">
                     {technology.category}

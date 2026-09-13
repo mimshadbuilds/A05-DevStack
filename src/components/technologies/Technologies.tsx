@@ -43,6 +43,10 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
 
     return (
         <section className="container mx-auto px-4 py-8">
+            <div className="mb-8 p-2">
+                <h2 className="text-4xl font-extrabold leading-relaxed">Explore the <span className="text-color">Technologies</span></h2>
+                <p className="text-base leading-normal text-slate-600">Pick one technology per category to build your ideal stack.</p>
+            </div>
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:col-span-3 xl:grid-cols-3">
                     {technologies.map((technology) => {
