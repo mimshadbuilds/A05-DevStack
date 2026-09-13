@@ -1,13 +1,15 @@
+import { IoMenu } from 'react-icons/io5';
 import logo from '../assets/icon.png';
 
 const Nav = () => {
     return (
         <nav>
             <div className="container mx-auto flex h-14 items-center justify-between px-4">
+                <span className="block md:hidden"><IoMenu className="text-2xl text-black" /></span>
                 <div className="flex items-center gap-1">
                     <img src={logo} alt="Logo" className="h-10 w-10 object-contain rounded-md pt-1" />
                     <span className="text-xl font-bold text-gray-900">
-                        Dev <span className="text-pink-600">Stack</span>
+                        Dev <span className="text-color">Stack</span>
                     </span>
                 </div>
             <ul className="hidden md:flex justify-center items-center gap-6 text-sm font-semibold text-gray-600">
