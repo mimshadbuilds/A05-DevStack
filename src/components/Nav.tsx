@@ -5,10 +5,10 @@ const Nav = () => {
     return (
         <nav>
             <div className="container mx-auto flex h-14 items-center justify-between px-4">
-                <span className="block md:hidden"><IoMenu className="text-2xl text-black" /></span>
+                <span className="block md:hidden text-pink-600"><IoMenu className="text-2xl text-black" /></span>
                 <div className="flex items-center gap-1">
                     <img src={logo} alt="Logo" className="h-10 w-10 object-contain rounded-md pt-1" />
-                    <span className="text-xl font-bold text-gray-900">
+                    <span className="text-lg md:text-xl font-bold text-gray-900">
                         Dev <span className="text-color">Stack</span>
                     </span>
                 </div>
@@ -30,10 +30,10 @@ const Nav = () => {
                 </li>
             </ul>
             <div className="flex items-center gap-4">
-                <button className="text-sm font-medium text-gray-700 transition hover:text-pink-600">
+                <button className="text-xs md:text-sm font-medium text-gray-700 transition hover:text-pink-600 cursor-pointer">
                     Sign In
                 </button>
-                <button className="rounded-full bg-pink-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-pink-700">
+                <button className="rounded-full bg-pink-600 px-4 md:px-2 py-2.5 text-xs md:text-sm font-semibold text-white shadow-sm transition hover:bg-pink-700 cursor-pointer">
                     Sign Up
                 </button>
                 </div>
