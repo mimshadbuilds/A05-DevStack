@@ -23,8 +23,8 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
         return;
         }
 
-        setSelectedTechnologies((previous) => [
-        ...previous,
+        setSelectedTechnologies((selected) => [
+        ...selected,
         technology,
         ]);
 
@@ -45,12 +45,19 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
         <section className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:col-span-3 xl:grid-cols-3">
-                    {technologies.map((technology) => (
-                        <TechnologyCard key={technology.id} technology={technology} handleAddStack={handleAddStack}  />
-                    ))}
+                    {technologies.map((technology) => {
+                        const isAdded = selectedTechnologies.some((item) =>
+                        item.id === technology.id);
+                return (
+                    <TechnologyCard key={technology.id} 
+                    technology={technology}
+                    isAdded={isAdded} 
+                    handleAddStack={handleAddStack}  
+                    />
+                );
+                })}
                 </div>
-                <YourStack
-                    selectedTechnologies={selectedTechnologies}
+                <YourStack selectedTechnologies={selectedTechnologies}
                     removeBtn={handleRemove}
                     removeAllBtn={handleRemoveAll}
                 />
