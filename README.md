@@ -1,19 +1,149 @@
-# React + TypeScript + Vite
+# 🚀 A05-DevStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, performant web development stack built with React, TypeScript, and Vite. This project demonstrates best practices for building fast, type-safe web applications with a focus on developer experience and production performance.
 
-Currently, two official plugins are available:
+## 🌐 Live Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Project](https://your-live-link-here.com) *(update with your deployed URL)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📋 Table of Contents
 
-## Expanding the Oxlint configuration
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Installation & Setup](#installation--setup)
+- [Available Scripts](#available-scripts)
+- [Links & Resources](#links--resources)
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
+
+## 📸 Overview
+
+A05-DevStack is a modern development stack template that combines:
+- **React 19** for building dynamic user interfaces
+- **TypeScript** for type-safe development
+- **Vite** for lightning-fast development and optimized builds
+- **Tailwind CSS** for utility-first styling
+- **DaisyUI** for pre-built accessible components
+
+This stack is optimized for performance, maintainability, and developer productivity.
+
+---
+
+## 🛠 Technologies
+
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| **React** | 19.2.8 | UI Library |
+| **TypeScript** | ~6.0.2 | Type Safety |
+| **Vite** | 8.3.0 | Build Tool & Dev Server |
+| **Tailwind CSS** | 4.3.3 | Styling Framework |
+| **DaisyUI** | 5.7.37 | UI Component Library |
+| **React Icons** | 5.7.0 | Icon Library |
+| **React Toastify** | 11.1.0 | Toast Notifications |
+| **Oxlint** | 1.81.0 | Linting |
+
+---
+
+## ✨ Features
+
+- ⚡ **Lightning-Fast Development** - Instant HMR (Hot Module Replacement) with Vite
+- 🔒 **Type Safety** - Full TypeScript support with strict type checking
+- 🎨 **Modern Styling** - Tailwind CSS + DaisyUI for beautiful, responsive designs
+- 🧹 **Code Quality** - Oxlint for consistent code standards
+- 🔄 **Component-Driven** - React best practices and patterns
+- 📦 **Optimized Builds** - Fast production builds with tree-shaking
+- 🎯 **Developer Experience** - Comprehensive tooling and configuration
+- 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS
+
+---
+
+## 📦 Dependencies
+
+### Production Dependencies
+```json
+{
+  "@tailwindcss/vite": "^4.3.3",
+  "react": "^19.2.8",
+  "react-dom": "^19.2.8",
+  "react-icons": "^5.7.0",
+  "react-toastify": "^11.1.0",
+  "tailwindcss": "^4.3.3"
+}
+```
+
+### Development Dependencies
+```json
+{
+  "@types/node": "^24.13.3",
+  "@types/react": "^19.2.18",
+  "@types/react-dom": "^19.2.7",
+  "@vitejs/plugin-react": "^6.1.1",
+  "daisyui": "^5.7.37",
+  "oxlint": "^1.81.0",
+  "typescript": "~6.0.2",
+  "vite": "^8.3.0"
+}
+```
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Node.js 18.0 or higher
+- npm or yarn package manager
+
+### Step-by-Step Guide
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mimshadbuilds/A05-DevStack.git
+   cd A05-DevStack
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+   The optimized build will be generated in the `dist/` directory
+
+5. **Preview the production build**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with HMR |
+| `npm run build` | Build TypeScript and optimize for production |
+| `npm run lint` | Run Oxlint code quality checks |
+| `npm run preview` | Preview production build locally |
+
+---
+
+## 🔧 Configuration
+
+### Oxlint Configuration
+The project uses Oxlint for code quality. For production applications, enable type-aware lint rules by modifying `.oxlintrc.json`:
 
 ```json
 {
@@ -29,4 +159,62 @@ If you are developing a production application, we recommend enabling type-aware
 }
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+See [Oxlint Rules Documentation](https://oxc.rs/docs/guide/usage/linter/rules) for all available rules.
+
+### Tailwind CSS
+Tailwind CSS is configured via `tailwind.config.js`. The project includes DaisyUI for pre-built components.
+
+---
+
+## 📚 Links & Resources
+
+- 🔗 **[GitHub Repository](https://github.com/mimshadbuilds/A05-DevStack)**
+- 🌐 **[Live Project](https://your-live-link-here.com)** *(update with your deployed URL)*
+- 📖 **[React Documentation](https://react.dev)**
+- ⚡ **[Vite Documentation](https://vite.dev)**
+- 🎨 **[Tailwind CSS](https://tailwindcss.com)**
+- 🧩 **[DaisyUI Components](https://daisyui.com)**
+- 📦 **[React Icons](https://react-icons.github.io/react-icons)**
+
+---
+
+## 🎯 Project Structure
+
+```
+A05-DevStack/
+├── src/                 # Source code
+│   ├── components/      # React components
+│   ├── App.tsx         # Main app component
+│   └── main.tsx        # Entry point
+├── public/             # Static assets
+├── package.json        # Project dependencies
+├── tsconfig.json       # TypeScript configuration
+├── vite.config.ts      # Vite configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+└── README.md           # This file
+```
+
+---
+
+## 👤 Author
+
+**mimshadbuilds** - [GitHub Profile](https://github.com/mimshadbuilds)
+
+---
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 💡 Tips for Development
+
+- Use `npm run lint` before committing to catch code quality issues
+- Check the [React Docs](https://react.dev/learn/react-compiler) for React Compiler setup if needed
+- Refer to [Vite Docs](https://vite.dev/guide/) for advanced configurations
+- Keep components small and focused for better reusability and testing
+
+---
+
+**Happy Coding! 🎉**
