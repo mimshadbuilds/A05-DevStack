@@ -165,6 +165,28 @@ See [Oxlint Rules Documentation](https://oxc.rs/docs/guide/usage/linter/rules) f
 Tailwind CSS is configured via `tailwind.config.js`. The project includes DaisyUI for pre-built components.
 
 ---
+JSX is a syntax extension for JavaScript that allows writing HTML-like markup inside React components.
+
+Props are read-only data passed down from a parent to a child.
+
+The useState hook allows functional components to store and update internal data.
+
+The useEffect hook manages side effects in functional components.
+
+Every item in a .map() list requires a unique key prop so React can efficiently track exactly which items are added, changed, or removed during UI updates.
+
+Conditional rendering displays different UI elements based on current state or logic, such as 'showing an empty stack message when an array's length is zero'.
+
+Data is passed from parent to child using props. 
+Then the child sends data back to the parent by executing a callback function provided through those same props.
+
+---
+# 3 key features
+
+*Data fetching using the 'use' hook
+*Conditional rendering to add cards in the stack
+*Implementation of the sidebar with Add/Remove functionality
+---
 
 ## 📚 Links & Resources
 
