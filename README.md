@@ -70,9 +70,9 @@ This stack is optimized for performance, maintainability, and developer producti
 
 # 3 key features about this project
 
-Data fetching using the 'use' hook from JSON.
-Conditional rendering to add cards in the stack.
-Sidebar implementation with Add/Remove functionality.
+- Data fetching using the 'use' hook from JSON. 
+- Conditional rendering to add cards in the stack. 
+- Sidebar implementation with Add/Remove functionality.
 
 ---
 
