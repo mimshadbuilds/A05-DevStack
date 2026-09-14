@@ -29,11 +29,11 @@ const Nav = () => {
                     <a href="#" className="transition hover:text-pink-600">Contact</a>
                 </li>
             </ul>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
                 <button className="text-xs md:text-sm font-medium text-gray-700 transition hover:text-pink-600 cursor-pointer">
                     Sign In
                 </button>
-                <button className="rounded-full bg-pink-600 px-4 md:px-2 py-2.5 text-xs md:text-sm font-semibold text-white shadow-sm transition hover:bg-pink-700 cursor-pointer">
+                <button className="rounded-full bg-pink-600 p-2 px-4 md:px-4 py-2 text-xs md:text-sm font-semibold text-white shadow-sm transition hover:bg-pink-700 cursor-pointer">
                     Sign Up
                 </button>
                 </div>

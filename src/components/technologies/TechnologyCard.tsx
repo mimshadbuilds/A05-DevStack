@@ -10,7 +10,7 @@ interface TechnologyCardProps {
 const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardProps) => {
     return (
         <div className="card h-full w-full rounded-xl border border-base-200 bg-base-100 shadow-sm">
-            <div className="card-body gap-0 p-4">
+            <div className="card-body gap-0 p-5">
                 <div className="flex items-start justify-between">
                 <img
                     src={technology.icon}

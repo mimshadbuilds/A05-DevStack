@@ -18,23 +18,28 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
             item.id === technology.id
     );
 
-        if (addedStacks) {
-        toast.warning(`${technology.name} is already in your stack!`);
-        return;
-        }
+    if(addedStacks) {
+    toast.warning(`${technology.name} is already in your stack!`);
+    return;
+    }
 
-        setSelectedTechnologies((selected) => [
-        ...selected,
-        technology,
-        ]);
+    setSelectedTechnologies((selected) => [
+    ...selected, technology,
+    ]);
 
-        toast.success(`${technology.name} added to your stack!`);
+    toast.success(`${technology.name} added to your stack!`);
     };
 
-    const handleRemove = (id: string) =>
-        setSelectedTechnologies((selected) =>
-        selected.filter((technology) => technology.id !== id)
-    )
+    const handleRemove = (id: string) => {
+        const technology = selectedTechnologies.find((tech) => tech.id === id);
+
+        const updatedStack = selectedTechnologies.filter((technology) => technology.id !== id);
+        setSelectedTechnologies(updatedStack);
+
+        toast.error(`${technology?.name} has been removed.`);
+    }
+    
+
 
     const handleRemoveAll = () => {
         setSelectedTechnologies([]);
