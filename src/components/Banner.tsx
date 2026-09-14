@@ -8,10 +8,14 @@ const Banner = () => {
                 <h1 className='text-3xl font-extrabold leading-tight sm:text-4xl md:text-6xl mb-4'>
                     <span>Build Your Ideal</span> <br /> <span className='text-gradient-custom'>Development Stack</span>
                 </h1>
-                <p className='text-sm md:text-[18px] sm:text-lg leading-relaxed text-gray-600 max-w-xl md:mx-0 pb-10'>Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.</p>
-                <div className='flex md:justify-start justify-center items-center w-full gap-3 sm:gap-4 mt-4'>
-                    <button className="btn-gradient btn text-xs sm:text-sm font-semibold rounded-lg px-3 md:px-4 md:py-2 flex-1">Explore Technologies</button>
-                    <button className="btn bg-white text-xs sm:text-sm font-normal rounded-lg px-3 md:px-8 md:py-4 flex-1">Learn more</button>
+                <p className='text-sm md:text-[18px] sm:text-lg leading-relaxed text-gray-600 max-w-xl md:mx-0 pb-10'>Explore frontend, backend, database, and tooling options, compare them side by side, and put together the stack that fits your next project.</p> 
+                <div className="flex w-full flex-row gap-2 items-center justify-center md:justify-start sm:gap-4 mt-4">
+                    <button className="btn-gradient h-10 w-44 rounded-lg px-4 text-xs font-semibold shadow-md transition hover:opacity-90 cursor-pointer">
+                        Explore Technologies
+                    </button>
+                    <button className="h-10 w-44 rounded-lg border border-gray-200 bg-white px-4 text-xs font-normal text-gray-800 shadow-sm transition hover:bg-gray-50 cursor-pointer">
+                        Learn more
+                    </button>
                 </div>
             </div>
             <div className="w-full md:w-[40%]">

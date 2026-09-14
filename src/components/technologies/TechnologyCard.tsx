@@ -1,5 +1,5 @@
+import { FaStar } from "react-icons/fa";
 import type { Itechnology } from "../../types";
-import { CiStar } from "react-icons/ci";
 
 interface TechnologyCardProps {
     technology: Itechnology;
@@ -12,10 +12,7 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
         <div className="card h-full w-full rounded-xl border border-base-200 bg-base-100 shadow-sm">
             <div className="card-body gap-0 p-5">
                 <div className="flex items-start justify-between">
-                <img
-                    src={technology.icon}
-                    alt={technology.name}
-                    className="h-9 w-9 object-contain" />
+                <img src={technology.icon} alt="" className="h-9 w-9 object-contain" />
 
                 <span className={`badge badge-xs ${
                     technology.badge === "Popular"
@@ -31,12 +28,12 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
                     {technology.badge}
                 </span>
                 </div>
-                <h2 className="mt-4 text-base font-bold text-slate-900">
-                {technology.name}
-                </h2>
-                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
-                {technology.description}
-                </p>
+                    <h2 className="mt-4 text-base font-bold text-slate-900">
+                    {technology.name}
+                    </h2>
+                    <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
+                    {technology.description}
+                    </p>
 
                 <div className="mt-4 flex items-center justify-between gap-2 text-[10px]">
                 <div className="flex items-center gap-1">
@@ -47,12 +44,11 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
                     {technology.difficulty}
                     </span>
                 </div>
-                <span className="flex shrink-0 items-center gap-0.5 text-slate-700">
-                    <CiStar className="text-sm text-amber-500" />
+                <span className="flex justify-center text-sm font-medium items-center gap-1 text-slate-700 pr-2">
+                    <FaStar className="text-xs text-amber-500" />
                     {technology.rating}
                 </span>
                 </div>
-
                 <div className="mt-6">
                     <button onClick={() => handleAddStack(technology)} 
                     disabled={isAdded}
@@ -61,7 +57,7 @@ const TechnologyCard = ({ technology, isAdded, handleAddStack }: TechnologyCardP
                     ? "bg-pink-100-100 text-pink-700"
                     : "bg-slate-950 text-white hover:bg-slate-800"
                         }`}>
-                        {isAdded ? "Added to Stack" : "Add to Stack"}
+                        {isAdded ? "✓ Added to Stack" : "Add to Stack"}
                     </button>
                 </div>
             </div>

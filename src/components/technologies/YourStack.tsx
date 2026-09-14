@@ -32,7 +32,7 @@ const YourStack = ({ selectedTechnologies, removeBtn, removeAllBtn }: YourStackP
                             className="h-7 w-7 object-contain" />
                         </div>
                         <div className="min-w-0 flex-1">
-                            <h3 className="truncate text-xs font-bold text-gray-800">
+                            <h3 className="text-xs font-bold text-gray-800">
                             {technology.name}
                             </h3>
                             <p className="text-[9px] text-gray-400">

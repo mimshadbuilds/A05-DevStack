@@ -18,8 +18,8 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
             item.id === technology.id
     );
 
-    if(addedStacks) {
-    toast.warning(`${technology.name} is already in your stack!`);
+    if(addedStacks) { 
+        toast.warning(`${technology.name} is already in your stack!`);
     return;
     }
 
@@ -39,37 +39,27 @@ const Technologies = ({technologyPromise}: TechnologyProps) => {
         toast.error(`${technology?.name} has been removed.`);
     }
     
-
-
     const handleRemoveAll = () => {
         setSelectedTechnologies([]);
         toast.info("Your stack has been cleared.");
     };
-
     return (
         <section className="container mx-auto px-4 py-8">
             <div className="mb-8 p-2">
-                <h2 className="text-4xl font-extrabold leading-relaxed">Explore the <span className="text-color">Technologies</span></h2>
-                <p className="text-base leading-normal text-slate-600">Pick one technology per category to build your ideal stack.</p>
+                <h2 className="text-2xl md:text-4xl font-extrabold md:leading-relaxed text-center md:text-left">Explore the <span className="text-color">Technologies</span></h2>
+                <p className="text-base leading-normal text-slate-600 text-center md:text-left">Pick one technology per category to build your ideal stack.</p>
             </div>
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:col-span-3 xl:grid-cols-3">
                     {technologies.map((technology) => {
                         const isAdded = selectedTechnologies.some((item) =>
                         item.id === technology.id);
-                return (
-                    <TechnologyCard key={technology.id} 
-                    technology={technology}
-                    isAdded={isAdded} 
-                    handleAddStack={handleAddStack}  
-                    />
+                return(
+                    <TechnologyCard key={technology.id} technology={technology} isAdded={isAdded} handleAddStack={handleAddStack} />
                 );
-                })}
+            })}
                 </div>
-                <YourStack selectedTechnologies={selectedTechnologies}
-                    removeBtn={handleRemove}
-                    removeAllBtn={handleRemoveAll}
-                />
+                <YourStack selectedTechnologies={selectedTechnologies} removeBtn={handleRemove} removeAllBtn={handleRemoveAll} />
             </div>
         </section>
     );

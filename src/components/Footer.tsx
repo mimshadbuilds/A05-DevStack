@@ -13,7 +13,7 @@ const Footer = () => {
                         <p className="max-w-[350px] text-[15px] leading-6 text-base-content/60">
                             Curated tools, technologies, and resources for developers building modern software.
                         </p>
-                        <div className="mt-5 flex items-center gap-5 text-base-content/60">
+                        <div className="flex items-center gap-5 font-semibold text-slate-700 mt-5">
                             <a href="#">
                                 <FaGithub size={18} />
                             </a>
@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.22em] text-base-content/70">
+                        <h3 className="text-xs text-slate-950 font-bold uppercase tracking-[0.22em] mb-5">
                             Product
                         </h3>
                         <ul className="space-y-3">
@@ -48,7 +48,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.22em] text-base-content/70">
+                        <h3 className="text-xs text-slate-950 font-bold uppercase tracking-[0.22em] mb-5">
                             Company
                         </h3>
                         <ul className="space-y-3">
@@ -68,7 +68,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-base-content/70 mb-5">Legal</h3>
+                        <h3 className="text-xs text-slate-950 font-bold uppercase tracking-[0.22em] mb-5">
+                        Legal</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a href="#" className="inline-block text-[15px] leading-6 text-base-content/60">Privacy Policy</a>
@@ -83,8 +84,8 @@ const Footer = () => {
                     <div className="flex flex-col gap-3 text-[10px] text-base-content/50 justify-between md:flex-row md:items-center">
                         <p className="md:col-span-1">© 2026 Dev Stack. All rights reserved.</p>
                         <div className="flex items-center gap-5 md:col-start-4 md:justify-end">
-                            <a href="#" className="text-slate-400">Privacy</a>
-                            <a href="#" className="text-slate-400">Terms</a>
+                            <a href="#" className="text-xs text-slate-400">Privacy</a>
+                            <a href="#" className="text-xs text-slate-400">Terms</a>
                         </div>
                     </div>
                 </div>
